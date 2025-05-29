@@ -1,0 +1,189 @@
+body, h1, ul, li, form, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #222;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.09);
+    padding: 32px 24px 24px 24px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #2d3a4a;
+    margin-bottom: 24px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.equipment-list {
+    list-style: none;
+    margin-bottom: 32px;
+}
+
+.equipment-item {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid #e4e8ee;
+    transition: background 0.2s;
+}
+
+.equipment-item:last-child {
+    border-bottom: none;
+}
+
+.equipment-number {
+    font-weight: bold;
+    color: #4a90e2;
+    font-size: 1.1rem;
+    min-width: 28px;
+    text-align: right;
+}
+
+.equipment-content {
+    flex: 1;
+}
+
+.equipment-name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #222;
+}
+
+.equipment-description {
+    font-size: 0.98rem;
+    color: #555;
+    margin-top: 4px;
+}
+
+.delete-btn {
+    background: #ff4d4f;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-left: 12px;
+}
+
+.delete-btn:hover {
+    background: #d9363e;
+}
+
+.add-form {
+    display: flex;
+    gap: 11px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right:40px;
+    margin-left:40px;
+}
+
+.add-form input[type="text"] {
+    padding: 8px 10px;
+    border: 1px solid #cfd8dc;
+    border-radius: 6px;
+    font-size: 1rem;
+    flex: 1 1 140px;
+    transition: border 0.2s;
+}
+
+.add-form input[type="text"]:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+.add-form button {
+    background: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.add-form button:hover {
+    background: #357abd;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 16px 6px;
+    }
+    .equipment-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+    .add-form {
+        flex-direction: column;
+        gap: 8px;
+        align-items: stretch;
+    }
+}
+
+.navbar {
+    background: #4a90e2;
+    padding: 14px 0;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 6px 14px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.nav-link:hover {
+    background: #357abd;
+}
+.detail{
+    display: flex;
+    gap: 11px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.edit-btn {
+    background: #ffc107;
+    color: #222;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s;
+    margin-left: 8px;
+}
+.edit-btn:hover {
+    background: #e0a800;
+    color: #fff;
+}
