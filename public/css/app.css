@@ -163,13 +163,6 @@ h1 {
 .nav-link:hover {
     background: #357abd;
 }
-.detail{
-    display: flex;
-    gap: 11px;
-    margin-top: 20px;
-    flex-wrap: wrap;
-    align-items: center;
-}
 
 .edit-btn {
     background: #ffc107;
@@ -186,4 +179,59 @@ h1 {
 .edit-btn:hover {
     background: #e0a800;
     color: #fff;
+}
+
+#back-to-top:hover {
+    background: #357abd;
+}
+
+.navbar {
+    background: #4a90e2;
+    padding: 10px 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+
+.navbar-left {
+
+    gap: 3px;
+}
+
+.navbar-search {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 14px 8px;
+    }
+    .navbar-left {
+        justify-content: center;
+        gap: 16px;
+        margin-bottom: 10px;
+    }
+    .navbar-search {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+.navbar.navbar-left-align {
+    justify-content: flex-start !important;
+    gap: 0 !important;
+}
+
+.navbar.navbar-left-align .nav-link {
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 18px;
 }
